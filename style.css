@@ -20,3 +20,15 @@ html{
     color: black;
 }
 
+.titles{
+    font-size: 5rem;
+}
+
+.content{
+    font-size: 1.5rem;
+}
+
+.grey-area{
+    background-color: silver;
+}
+
