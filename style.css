@@ -29,6 +29,15 @@ html{
 }
 
 .grey-area{
-    background-color: #86bbd84d;
+    background-color:#86BBD840;
 }
+
+.about-titles{
+    font-size: 3rem;
+}
+
+.about-content{
+    font-size: 1.5rem;
+}
+
 
