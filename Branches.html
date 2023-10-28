@@ -23,7 +23,7 @@
 <body>
 
     <!-- nav bar -->
-    <nav class="navbar navbar-expand-lg fixed-top shadow" style="background-color: white;">
+    <nav class="navbar navbar-expand-lg shadow" style="background-color: white;">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html"><img src="awon-logo.png" alt=""></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,67 +44,76 @@
             
           </div>
         </div>
-      </nav>
+    </nav>
+
+      <!-- Contanier -->
+    <div class="container d-flex flex-column my-5 p-5 justify-content-center text-center" style="background-color:rgba(134, 187, 216, 0.30); border-radius: 76px;">
+        <!-- Content here -->
+        <h1 class="fw-bold text-dark p-2">فروعنا</h1>
+        <h5 class="fs-medium text-dark"> ابحث عن الفرع الأقرب لك</h5>
+        <hr>
+        <div class="  d-flex flex-column text-end mt-3 p-5 ">
+          <h5 class="fs-medium text-dark"> اختر المنطقة</h5>
+          <select class="form-select border border-1 text-black-50 bg-white border-radius-30px" aria-label="Default select example">
+            <option selected>اختر المنطقة </option>
+            <option value="1">الوسطى</option>
+            <option value="2">الشرقية</option>
+            <option value="3">الغربية</option>
+            <option value="2">الشمالية</option>
+            <option value="3">الجنوبية</option>
+          </select>
+       </div>
+       <div class="d-flex flex-column text-end px-5 h-50">
+        <h5  class="fs-medium text-dark"> اختر المدينة</h5>
+        <select class="form-select border border-1 text-black-50 bg-white  border-radius-30px" aria-label="Default select example">
+          <option selected>اختر المدينة </option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+     </div>
+     <iframe class="  d-flex justify-content-center  p-5 " src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d165885.49880198552!2d46.801812823610014!3d24.72912940426751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z2K7Yr9mF2Kkg2LnZiNmGIA!5e0!3m2!1sar!2ssa!4v1698423493767!5m2!1sar!2ssa" width="100%" height="600" style="border-radius: 50px ;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
 
 
-    
-</body>
+      <!-- footer  -->
+ <footer class="text-center pt-5 " style="background-color:#0C1A31;">
+        <div class="container text-center ">
+          <div class="row">
+            <div class="col">
+              <img src="awon-logo.png" style="width: 40%;">
+            </div>
+            <div class="col">
+              <a class="text-white">920003023<img src="phone.svg" style="width: 6%;"></a>
+            </div>
+            <div class="col">
+             <a href="https://apps.apple.com/us/app/awon-%D8%B9%D9%88%D9%86/id1483782795"><img src="app-store.svg" alt="" style="width: 30%;"></a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <a href="https://twitter.com/AounServices?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img  class=" m-2" src="x.svg" style="width: 6%;"></a>
+              <a href="https://www.facebook.com/AOUNSERVICE/"><img class=" m-2" src="facebook.svg" style="width: 6%;"></a>
+              <a href="https://instagram.com/aoun.se7?igshid=YTQwZjQ0NmI0OA=="><img class=" m-2" src="insta.svg" style="width: 6%;"></a>
+            </div>
+            <div class="col">
+              <a class="text-white m-2 ">awon.crm@irc.sa<img src="mail.svg" style="width: 6%;"></a>
+            </div>
+            <div class="col">
+              <a href="https://play.google.com/store/apps/details?id=com.excprotection.ircmobile"><img src="google-play.svg" alt="" style="width: 30%;"></a>
+            </div>
+          </div>
+          <hr class="mt-2">
+          <div class="row">
+            <div class="col">
+                <p class="text-light fw-lighter fs-6 m-1">© 2023 عون</p>
+            </div>
+        </div>
+</footer>
+
+   
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
 integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
-
-<!-- Footer -->
-<footer class="text-center text-lg-start text-muted mt-5 " style="background-color: #0C1A31;">
-    
-    <!-- Section: Links  -->
-    <section class="">
-      <div class="container text-center text-md-start mt-5">
-        <!-- Grid row -->
-        <div class="row mt-3">
-          <!-- Grid column -->
-          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 d-flex flex-column justify-content-center">
-            <!-- Content -->
-            <!-- <h6 class="text-uppercase fw-bold mb-4 d-flex"> -->
-            <img src="awon-logo.png" alt="">
-            <!-- </h6> -->
-            <div class="d-flex justify-content-evenly mt-5">
-                <img width="25" src="facebook.svg" alt="">
-                <img width="25" src="insta.svg" alt="">
-                <img width="25" src="x.svg" alt="">
-              
-              </div>
-          </div>
-          <!-- Grid column -->
-  
-          <!-- Grid column -->
-          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 g-5 w-25">
-            <p>
-              <a href="#!" class="text-reset"> 920003023 <img src="phone.svg" alt=""></a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">awon.crm@irc.sa <img src="mail.svg" alt=""></a>
-            </p>
-          </div>
-          <!-- Grid column -->
-  
-          <!-- Grid column -->
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 g-5">
-            <img src="google-play.svg" alt="">
-            <img src="app-store.svg" alt="">
-          </div>
-          <!-- Grid column -->
-        </div>
-        <!-- Grid row -->
-      </div>
-    </section>
-    <!-- Section: Links  -->
-  
-    <!-- Copyright -->
-    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-      <h5 class="text-light">© 2017-2022 عون </h5>
-    </div>
-    <!-- Copyright -->
-  </footer>
-  <!-- Footer -->
+</body>
 </html>
