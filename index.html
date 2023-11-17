@@ -21,51 +21,65 @@
 
 <link href='https://fonts.googleapis.com/css?family=Noto+Naskh+Arabic' rel='stylesheet' type='text/css'>
 
-    <title>Awon</title>
+    <title>عون</title>
 </head>
 <body>
 
     <!-- nav bar -->
-    <nav class="navbar navbar-expand-lg fixed-top shadow" style="background-color: white;">
+  <nav class="navbar navbar-expand-lg fixed-top shadow" style="background-color:  #00333E; width: 100vw;">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"><img src="awon-logo.png" alt=""></a>
+          <a class="navbar-brand" href="index.html"><img src="awon_logo.png" alt="" style="height: 55px; "></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav d-flex justify-content-evenly w-75 pe-5">
-              <a class="nav-link" aria-current="page" href="index.html">الرئيسية</a>
-              <a class="nav-link" aria-current="page" href="Service.html">خدماتنا</a>
-              <a class="nav-link" aria-current="page" href="AboutUs.html">من نحن</a>
-              <a class="nav-link" aria-current="page" href="Branches.html">فروعنا</a>
-              <a class="nav-link" aria-current="page" href="#">اتصل بنا</a>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup" >
+            <div class="navbar-nav d-flex justify-content-evenly w-75 pe-5" >
+              <a class="nav-link" style="color: white;" aria-current="page" href="index.html">الرئيسية</a>
+              <a class="nav-link" style="color: white;" aria-current="page" href="Service.html">خدماتنا</a>
+              <a class="nav-link" style="color: white;" aria-current="page" href="AboutUs.html">من نحن</a>
+              <a class="nav-link" style="color: white;" aria-current="page" href="Branches.html">فروعنا</a>
+              <a class="nav-link" style="color: white;" aria-current="page" href="#">اتصل بنا</a>
+
             </div>
 
-            <div class="d-flex justify-content-end w-25">
-                <img style="width: 3vw;" src="USERICON.svg" alt="USERICON">
-            </div>
-            
+             <div class="d-flex justify-content-end w-25 ">
+                  <div class=" navbar-collapse" id="navbarLeftAlignExample">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"href="#"id="navbarDropdown"role="button"data-mdb-toggle="dropdown" aria-expanded="false" style="color: white;">
+                          تسجيل الدخول </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li> <a class="dropdown-item" href="login.html" id="textDrop">تسجيل الدخول </a> </li>
+                          <!-- <li> <a class="dropdown-item" href="signup.html">انشاء حساب</a> </li> -->
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+               </div>
+               
           </div>
         </div>
-      </nav>
+  </nav>
 
 <!-- imgs slider -->
-
-<div id="carouselExampleDark" class="carousel carousel-light slide">
+<div id="carouselExampleDark" class="carousel carousel-light slide" style="width: fit-content; height: fit-content;">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active" data-bs-interval="10000">
-      <img src="clean.JPG" class="d-block w-100" alt="" width="1137px" height="820px">
-      <div class="carousel-caption d-none d-md-block" style="height: 50vh;">
-        <h1 class="text-end" style="font-size: 10rem;"><b> نحن عون لك </b></h1>
+      <img src="header1.png" class="d-block" alt="" style="width:100vw;">
+      <div class="carousel-caption d-none d-md-block" style="height: 100%;">
       </div>
     </div>
 
     <div class="carousel-item" data-bs-interval="2000">
-      <img src="ad2.png" class="d-block w-100" alt="" width="1137px" height="820px">
+      <img src="header3.png" class="d-block " alt="" style="width:100vw;">
+    </div>
+
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="header2.png" class="d-block " alt="" style="width:100vw;">
     </div>
     
   </div>
@@ -82,21 +96,19 @@
 
 
   <!-- services -->
-  <div class="container text-center mt-5 p-5" sty>
-    <h1 class="titles fw-bold text-dark">خدماتنا</h1>
-    <p class="content fs-medium text-dark"> خدمات عون تغطي معظم مناطق ومدن المملكة. نقدم لكم عونًا من خلال توظيف <br> العمالة المنزلية المدربة بأعلى مستوى وبأقل التكاليف.</p>
-    <a class="btn mb-1" style="background-color: #ffb81fb0; width: 300px; font-size: 1rem;" href="Service.html" role="button"> الخدمات </a>
+  <div class="container text-center p-5">
+    <h1 class="titles fw-bold my-3 p-3" style="color: #00333E;" >خدماتنا</h1>
+    <p class="content fs-medium" style="color: #00333E;" > خدمات عون تغطي معظم مناطق ومدن المملكة. نقدم لكم عونًا من خلال توظيف <br> العمالة المنزلية المدربة بأعلى مستوى وبأقل التكاليف.</p>
+    <a class="btn mt-3 " style="background-color: #64a570; width: 300px; font-weight: bold; font-size: 1.1rem; color: white;" href="Service.html" role="button"> الخدمات </a>
   </div>
 
-  <!-- feedback -->
+    <!-- feedback -->
+   <div class="contanier mt-5 text-center p-3 ">
+  <h1 class="titles fw-bold" style="color: #00333E;"> آراء عملائنا </h1>
 
+   </div>
 
-<div class="contanier mt-5 text-center p-2">
-  <h1 class="titles fw-bold text-dark"> آراء العملاء </h1>
-
-</div>
-
-  <div class="grey-area">
+  <div class="grey-area" style="background-color: #bae3e083;  width: 100vw;">
 
   <div class="container  p-5">
     <div class="row">
@@ -149,45 +161,48 @@
     </div>
   </div>
   </div>
-    
-</body>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
-integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
 
       <!-- footer  -->
-      <footer class="text-center pt-5 " style="background-color:#0C1A31;">
+      <footer class="text-center pt-5 mt-5" style="background-color: #00333E;  width: 100vw;">
         <div class="container text-center ">
           <div class="row">
             <div class="col">
-              <img src="awon-logo.png" style="width: 40%;">
+              <img src="awon_logo.png" style="width: 70px;">
             </div>
             <div class="col">
-              <a class="text-white">920003023<img src="phone.svg" style="width: 6%;"></a>
+              <a class="text-white">920003023<img src="phone.svg" style="width: 27px; padding-right: 5px; margin-bottom: 2px;"></a>
             </div>
             <div class="col">
-             <a href="https://apps.apple.com/us/app/awon-%D8%B9%D9%88%D9%86/id1483782795"><img src="app-store.svg" alt="" style="width: 30%;"></a>
+             <a href="https://apps.apple.com/us/app/awon-%D8%B9%D9%88%D9%86/id1483782795"><img src="AppStoreIcon.png" alt="" style="width: 30%;"></a>
             </div>
           </div>
           <div class="row">
             <div class="col">
-              <a href="https://twitter.com/AounServices?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img  class=" m-2" src="x.svg" style="width: 6%;"></a>
-              <a href="https://www.facebook.com/AOUNSERVICE/"><img class=" m-2" src="facebook.svg" style="width: 6%;"></a>
-              <a href="https://instagram.com/aoun.se7?igshid=YTQwZjQ0NmI0OA=="><img class=" m-2" src="insta.svg" style="width: 6%;"></a>
+              <a href="https://twitter.com/AounServices?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img  class=" m-2" src="xIcon.png" style="width:30px;"></a>
+              <a href="https://www.facebook.com/AOUNSERVICE/"><img class=" m-2" src="fIcon.png" style="width: 30px;"></a>
+              <a href="https://instagram.com/aoun.se7?igshid=YTQwZjQ0NmI0OA=="><img class=" m-2" src="InstaIcon.png" style="width: 30px;"></a>
             </div>
             <div class="col">
-              <a class="text-white m-2 ">awon.crm@irc.sa<img src="mail.svg" style="width: 6%;"></a>
+              <a class="text-white m-2 ">awon.crm@irc.sa<img src="mail.svg" style="width: 27px ; padding-right: 5px;  margin-bottom: 2px;"></a>
             </div>
             <div class="col">
-              <a href="https://play.google.com/store/apps/details?id=com.excprotection.ircmobile"><img src="google-play.svg" alt="" style="width: 30%;"></a>
+              <a href="https://play.google.com/store/apps/details?id=com.excprotection.ircmobile"><img src="GooglePlayIcon.png" alt="" style="width: 30%;"></a>
             </div>
           </div>
           <hr class="mt-2">
           <div class="row">
             <div class="col">
-                <p class="text-light fw-lighter fs-6 m-1">© 2023 عون</p>
+                <p class="text-light fw-lighter fs-6 m-1">©2023 عون </p>
             </div>
+        
         </div>
-</footer>
+      </footer>
+</body>
+<script src="script_index.js"></script>
+  <!-- MDB -->
+  <script type="text/javascript"src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"></script>
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
 </html>
