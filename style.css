@@ -20,3 +20,24 @@ html{
     color: black;
 }
 
+.titles{
+    font-size:2.5rem;
+}
+
+.content{
+    font-size: 1.5rem;
+}
+
+.grey-area{
+    background-color:#86BBD840;
+}
+
+.about-titles{
+    font-size: 3rem;
+}
+
+.about-content{
+    font-size: 1.5rem;
+}
+
+
