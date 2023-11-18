@@ -1,12 +1,21 @@
 
 const userName = localStorage.getItem("username");
-// if(!userName){
-//    window.location.href='Login.html';
-// }else {
-   let navbarDropdown = document.getElementById("navbarDropdown");
+const isLogin = localStorage.getItem("isLogin");
+
+   if (isLogin) {
+      let navbarDropdown = document.getElementById("navbarDropdown");
    navbarDropdown.innerText= ` ${userName} مرحبا`;
    let textDrop = document.getElementById("textDrop");
    textDrop.innerText= ` تسجيل الخروج`;
+   
+   
+   } 
+   // else {
+   //    let navbarDropdown = document.getElementById("navbarDropdown");
+   // navbarDropdown.innerText= ` ${userName} مرحبا`;
+   // let textDrop = document.getElementById("textDrop");
+   // textDrop.innerText= ` تسجيل الخروج`;
+   // }
 
 
 // let textDrop = document.getElementById("textDrop");

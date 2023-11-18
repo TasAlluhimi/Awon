@@ -22,6 +22,12 @@ function validate() {
         text_user.innerText = "";
     }
 
+    if (inp_username.value === "admin" || inp_username.value === "Admin" || inp_username.value === "#admin") {
+        text_user.innerText = " اسماء غير مصرح بها ";
+    }else {
+        text_user.innerText = "";
+    }
+
     if (!emailRegex.test(inp_email.value)) {
         text_email.innerText = " الرجاء إدخال عنوان بريد إلكتروني صحيح";
     } else {
@@ -40,12 +46,6 @@ function validate() {
         text_psw_repeat.innerText = "";
     }
 
-    return (
-        inp_username.value.length >= 6 &&
-        emailRegex.test(inp_email.value) &&
-        inp_psw.value.length >= 9 &&
-        inp_psw.value === inp_psw_repeat.value
-    );
 }
 
 // POST - Sign up 
@@ -72,8 +72,9 @@ function apiFunPost() {
                 console.log(data);
                 result.innerHTML ='تم إنشاء الحساب بنجاح!';
                     result.style.color="#335F42"
+                    localStorage.setItem("username", enteredUsername);
+                    localStorage.setItem("isLogin", true);
                     window.location.href = 'index.html';
-
             })
             .catch((error) => {
                 console.error('Error:', error);
