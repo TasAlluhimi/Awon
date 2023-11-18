@@ -33,12 +33,18 @@ html{
     background-color:#86BBD840;
 }
 
+/* about style  */
+
 .about-titles{
     font-size: 3rem;
 }
 
 .about-content{
     font-size: 1.5rem;
+}
+
+.abt-us{
+  margin-top: 10%;
 }
 
 /* Signup-login */
@@ -164,8 +170,10 @@ input[type=text], input[type=email], input[type=password] ,#psw-repeat {
     color: white;
   }
 
+  
+
   /* * Extra small devices (phones, 600px and down) */ 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 700px) {
     #get-data{
         display: grid;
         grid-template-columns: auto;
@@ -198,6 +206,23 @@ input[type=text], input[type=email], input[type=password] ,#psw-repeat {
       font-size: small;
       padding: 12px 0px;      
     }
+
+    .abt-us{
+      margin-top: 30%;
+    }
     
  }
 
+@media only screen and (min-width: 701px) and (max-width: 922px) {
+
+  /* .card {
+    height: 30vh;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+} */
+
+  .abt-us{
+    margin-top: 20%;
+  }
+}
