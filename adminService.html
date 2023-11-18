@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="stylesheet" href=".css"> -->
 
 <!-- Font Awesome -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
@@ -19,12 +20,84 @@
 
 <body>
     <!-- nav here -->
+    <nav class="navbar navbar-expand-lg fixed-top shadow" style="background-color:  #00333E; width: 100vw;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="awon_logo.png" alt="" style="height: 55px; "></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup" >
+            <div class="navbar-nav d-flex justify-content-evenly w-75 pe-5" >
+              <a class="nav-link" style="color: white;" aria-current="page" href="index.html">الرئيسية</a>
+              <a class="nav-link" style="color: white;" aria-current="page" href="Service.html">خدماتنا</a>
+              <a class="nav-link" style="color: white;" aria-current="page" href="AboutUs.html">من نحن</a>
+              <a class="nav-link" style="color: white;" aria-current="page" href="Branches.html">فروعنا</a>
+              <a class="nav-link" style="color: white;" aria-current="page" href="#">اتصل بنا</a>
 
-    <div class="cont mt-5 p-5 border text-center" id="cont">
+            </div>
+
+             <div class="d-flex justify-content-end w-25 ">
+                  <div class=" navbar-collapse" id="navbarLeftAlignExample">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"href="#"id="navbarDropdown"role="button"data-mdb-toggle="dropdown" aria-expanded="false" style="color: white;">
+                          تسجيل الدخول </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li> <a class="dropdown-item" href="login.html" id="textDrop">تسجيل الدخول </a> </li>
+                          <!-- <li> <a class="dropdown-item" href="signup.html">انشاء حساب</a> </li> -->
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+               </div>
+               
+          </div>
+        </div>
+  </nav>
+
+
+  <!-- adding a service by the admin  -->
+    <div class="cont mt-5 p-5 text-center" id="cont">
        
     </div>
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="adminService.js"></script>
 
+ <!-- footer  -->
+ <footer class="text-center pt-5 mt-5" style="background-color: #00333E;  width: 100vw;">
+    <div class="container text-center ">
+      <div class="row">
+        <div class="col">
+          <img src="awon_logo.png" style="width: 70px;">
+        </div>
+        <div class="col">
+          <a class="text-white">920003023<img src="phone.svg" style="width: 27px; padding-right: 5px; margin-bottom: 2px;"></a>
+        </div>
+        <div class="col">
+         <a href="https://apps.apple.com/us/app/awon-%D8%B9%D9%88%D9%86/id1483782795"><img src="AppStoreIcon.png" alt="" style="width: 30%;"></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <a href="https://twitter.com/AounServices?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img  class=" m-2" src="xIcon.png" style="width:30px;"></a>
+          <a href="https://www.facebook.com/AOUNSERVICE/"><img class=" m-2" src="fIcon.png" style="width: 30px;"></a>
+          <a href="https://instagram.com/aoun.se7?igshid=YTQwZjQ0NmI0OA=="><img class=" m-2" src="InstaIcon.png" style="width: 30px;"></a>
+        </div>
+        <div class="col">
+          <a class="text-white m-2 ">awon.crm@irc.sa<img src="mail.svg" style="width: 27px ; padding-right: 5px;  margin-bottom: 2px;"></a>
+        </div>
+        <div class="col">
+          <a href="https://play.google.com/store/apps/details?id=com.excprotection.ircmobile"><img src="GooglePlayIcon.png" alt="" style="width: 30%;"></a>
+        </div>
+      </div>
+      <hr class="mt-2">
+      <div class="row">
+        <div class="col">
+            <p class="text-light fw-lighter fs-6 m-1">©2023 عون </p>
+        </div>
+    
+    </div>
+  </footer>
 </html>

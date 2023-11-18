@@ -5,8 +5,9 @@ fetch('https://65572cacbd4bcef8b61230f2.mockapi.io/services')
 .then(response => response.json())
 .then(data => {
     data.map(service => {
+      console.log(service);
         container.insertAdjacentHTML("afterbegin",
-        `<div class="card mb-3" style="max-width: 540px;">
+        `<div class="card mt-5" style="max-width: 540px;">
         <div class="row g-0">
           
           <div class="col-md-8">
@@ -15,7 +16,7 @@ fetch('https://65572cacbd4bcef8b61230f2.mockapi.io/services')
               <p class="card-text">
                 ${service.service_Description}
               </p>
-              <button id="admin" type="button" onclick="del(${service.id})" class="btn btn-block mb-4">Delete</button>
+              <button id="admin" type="button" onclick="del(${service.id})" class="btn btn-block mb-4">حذف</button>
             </div>
           </div>
 
@@ -23,6 +24,7 @@ fetch('https://65572cacbd4bcef8b61230f2.mockapi.io/services')
             <img
               src="${service.service_imgage}"
               alt="service"
+              
               class="img-fluid rounded-start"
             />
           </div>
@@ -32,3 +34,15 @@ fetch('https://65572cacbd4bcef8b61230f2.mockapi.io/services')
     })
 })
 .catch(error => console.error('The error is: ', error))
+
+function del(id) {
+
+  const del= `https://65572cacbd4bcef8b61230f2.mockapi.io/services/${id}`;
+
+  fetch(del, {
+      method: 'DELETE',
+  })
+  .then(res => res.json())
+  .then(data => console.log(data))
+  .catch(error => console.error('Error: ', error));
+}

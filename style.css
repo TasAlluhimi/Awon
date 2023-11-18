@@ -1,3 +1,4 @@
+
 @import url(https://fonts.googleapis.com/css?family=Noto+Naskh+Arabic);
 *{
     margin: 0;
@@ -122,6 +123,41 @@ input[type=text], input[type=email], input[type=password] ,#psw-repeat {
   /* index */
   
 
+  /* admin and clints services styles */
+
+  #admin{
+    background-color: #00333E;
+    color: white;
+    padding: 10px 15px;
+    margin: 8px 0;
+    border: 1.5px solid #00333E;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 75%;
+    font-weight: bolder;
+    font-size: small;
+  }
+
+  .cont{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 50px;    
+    /* align-items: flex-start; */
+  }
+
+  #order{
+    background-color: #00333E;
+    color: white;
+    padding: 7px 10px;
+    margin: 4px 0;
+    border: 1.5px solid #00333E;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 50%;
+    font-weight: bolder;
+    font-size: small;
+  }
 
   /* * Extra small devices (phones, 600px and down) */ 
   @media only screen and (max-width: 600px) {
@@ -153,7 +189,7 @@ input[type=text], input[type=email], input[type=password] ,#psw-repeat {
     input[type=text], input[type=email], input[type=password] {
       padding: 12px;
     }
-    #signupbtn , #login{
+    #signupbtn , #login, #add{
       font-size: small;
       padding: 12px 0px;      
     }
