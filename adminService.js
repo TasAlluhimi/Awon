@@ -43,6 +43,6 @@ function del(id) {
       method: 'DELETE',
   })
   .then(res => res.json())
-  .then(data => console.log(data))
+  .then(data => alert("تم الحذف بنجاح"))
   .catch(error => console.error('Error: ', error));
 }
