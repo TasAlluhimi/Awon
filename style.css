@@ -178,6 +178,8 @@ input[type=text], input[type=email], input[type=password] ,#psw-repeat {
 
   
 
+
+
   /* * Extra small devices (phones, 600px and down) */ 
   @media only screen and (max-width: 700px) {
     #get-data{
@@ -216,8 +218,45 @@ input[type=text], input[type=email], input[type=password] ,#psw-repeat {
     .abt-us{
       margin-top: 30%;
     }
-    
+    #contB{
+      width: 100vw;
+      margin: 0;
+      padding: 0;
+    }
+    #contB h5 , .card-text {
+      font-size: medium;
+    }
+   .titles , .card-title{
+    font-size:xx-large;
+   }
+
+    #googleMap{
+      width: 90vw;
+      height: 50vh;
+    }
+    #cont-index{
+      margin-top:15px;
+      align-self: center;
+      align-content: center;
+
+    }
+    footer .container{
+      font-size: 10px ;
+    }
+   
+   
+    footer .downloadicon{
+      width: 100% !important;
+    }
+
+    #cont{
+      display: grid;
+      grid-template-columns: auto;
+    }
+
+  
  }
+
 
 @media only screen and (min-width: 701px) and (max-width: 922px) {
 
@@ -230,5 +269,7 @@ input[type=text], input[type=email], input[type=password] ,#psw-repeat {
 
   .abt-us{
     margin-top: 20%;
+    
   }
 }
+
