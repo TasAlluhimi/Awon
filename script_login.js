@@ -17,8 +17,6 @@ function apiFunGet() {
         let enteredEmail = inp_email.value ;
         let enteredPsw = inp_psw.value;
 
-        // localStorage.clear()
-        localStorage.setItem("username",inp_username.value);
         fetch('https://65572cacbd4bcef8b61230f2.mockapi.io/users', {
                 method: "get"
             })
@@ -26,30 +24,30 @@ function apiFunGet() {
             .then(data => {
                 console.log(data);
                 for (let i = 0; i < data.length; i++) {
-                    if (enteredUsername === data[i].username  && enteredPsw === data[i].psw && enteredEmail === data[i].email  ) {
+                    if (enteredUsername === "admin#"  && enteredPsw === 'adminadmin' && enteredEmail === 'admin@admin.com') {
                         result.innerHTML ='تم تسجيل الدخول بنجاح!';
                         result.style.color="#335F42"
+                        localStorage.setItem("username", enteredUsername);
+                        localStorage.setItem("isLogin", true);
+                        window.location.href = 'adminService.html';
+
+                    } else if (enteredUsername === data[i].username  && enteredPsw === data[i].psw && enteredEmail === data[i].email) {
+                        result.innerHTML ='تم تسجيل الدخول بنجاح!';
+                        result.style.color="#335F42"
+                        localStorage.setItem("username", enteredUsername);
+                        localStorage.setItem("isLogin", true);
                         window.location.href = 'index.html';
-                    }
-                    else {
+                    } else {
                         result.innerHTML ='البيانات غير صحيحة. حاول مرة اخرى.';
                         result.style.color="#960724"
 
                       }
-                    //   if( enteredUsername === "Admin" && enteredPsw === "Admin123"){
-                    //     result.innerHTML ='Login successful!';
-                    //     result.style.color="#335F42"
-                    //     window.location.href = 'books.html';
-
-                    //   }
                 }
             })
             .catch((err) => console.log(`The error is ${err}`));
     });
 }
  apiFunGet();
-
-
 
 
 //  logout.addEventListener("click", () => {

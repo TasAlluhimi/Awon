@@ -16,7 +16,9 @@ fetch('https://65572cacbd4bcef8b61230f2.mockapi.io/services')
               <p class="card-text">
                 ${service.service_Description}
               </p>
+              <div class="text-center d-flex justify-content-center">
               <button id="order" type="button" class="btn btn-block mb-4">أطلب الخدمة</button>
+              </div>
             </div>
           </div>
 
